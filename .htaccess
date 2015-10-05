@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule (.*) application/web/$1
