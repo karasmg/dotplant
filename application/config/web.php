@@ -79,7 +79,7 @@ $config = [
     ],
     'components' => [
         'cache' => [
-            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\caching\DummyCache',
         ],
         'request' => [
             'enableCsrfValidation' => true,
@@ -177,6 +177,7 @@ $config = [
         ],
     ],
 ];
+
 
 $allConfig = ArrayHelper::merge(
     file_exists(__DIR__ . '/common.php') ? require(__DIR__ . '/common.php') : [],
